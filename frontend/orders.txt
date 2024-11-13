@@ -1,0 +1,34 @@
+orders = {
+    id:1,
+    products:[
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+        {product : product, amount:amount}
+    ]
+}
+
+orders.map(order => {
+    <>order.id<>
+    {
+        order.products.map(item => {
+            <>item.product.name<>
+            <>item.product.price<>
+            <>item.amount<>
+        })
+    }
+})
+
+[
+    {
+        id:1,
+        products : [
+            { id:1, name:"order deneme", price : 100, amount : 5},
+            { id:2, name:"order deneme2", price : 200, amount : 25}],
+        user : user
+    }]

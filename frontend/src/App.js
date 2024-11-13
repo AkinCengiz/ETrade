@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import Order from "./pages/Order";
 import Cart from "./pages/Cart";
 import Admin from './pages/Admin';
+import CreateProduct from './pages/CreateProduct';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='login' element={<Login/>}/>
           <Route path='register' element={<Register/>}/>
           <Route path='admin' element={<Admin />}/>
+          <Route path='products/add' element={<CreateProduct/>} />
         </Routes>
       </Router>
     </div>
