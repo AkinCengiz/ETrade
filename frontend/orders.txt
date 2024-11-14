@@ -32,3 +32,7 @@ orders.map(order => {
             { id:2, name:"order deneme2", price : 200, amount : 25}],
         user : user
     }]
+-------------------------------------------------------------------------------------------------------
+
+    Order ADD metodu tanımlanacak
+    Cart onaylandığında sepet boşalacak ve sepetteki ürünler order olarak order tablosuna eklenecek.

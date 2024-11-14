@@ -22,7 +22,7 @@ export default function Order() {
     <div className='container mt-3'>
       <div className='card'>
         <div className='card-header d-flex justify-content-between'>
-          <h2>Product List</h2>
+          <h2>Order List</h2>
           <Link to="/products/add" className='btn btn-success btn-sm'>Add</Link>
         </div>
         <div className='card-body'>

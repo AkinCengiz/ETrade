@@ -24,7 +24,7 @@ function App() {
           </Route>
           <Route path='login' element={<Login/>}/>
           <Route path='register' element={<Register/>}/>
-          <Route path='admin' element={<Admin />}/>
+          <Route path='myetrade/admin' element={<Admin />}/>
           <Route path='products/add' element={<CreateProduct/>} />
         </Routes>
       </Router>

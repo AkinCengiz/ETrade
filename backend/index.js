@@ -174,7 +174,28 @@ app.post("/products/remove",async (req, res) => {
 })
 //PRODUCT DELETE
 
+//CART ADD
+app.post("/cart/add", async(req,res) => {
+    try {
+        const { product, user } = req.body;
+        const cart = new Cart({
+            id : uuidv4(),
+            productId : product._id,
+            userId : user._id
+        });
+        await cart.save();
 
+        //const selectedProduct = await Product.findById(product._id);=> Parametre olarak productId gönderseydik product ı bu şekilde yakalardık.
+        product.stock -= 1;
+        await Product.findByIdAndUpdate(product._id,product);
+
+        res.json({message : "The product has been successfully added to the cart."})
+        
+    } catch (error) {
+        res.status(500).json({message : error.message});
+    }     
+})
+//CART ADD
 
 
 
